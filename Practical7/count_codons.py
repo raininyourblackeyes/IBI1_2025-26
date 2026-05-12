@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import re
+import os
 
 start_codons = 'ATG'
 stop_codons = ['TAA', 'TAG', 'TGA']
@@ -15,8 +16,10 @@ while user_stop_codon not in stop_codons:
     user_stop_codon = user_stop_codon.strip().upper() #Remove any leading/trailing whitespace
 
 #open the FASTA file for reading
-infile = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
+script_folder = os.path.dirname(__file__)
+input_path = os.path.join(script_folder, 'Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa')
 
+infile = open(input_path, 'r')
 #variables to store the current header and sequence while reading the file
 header = ''
 sequence = ''
