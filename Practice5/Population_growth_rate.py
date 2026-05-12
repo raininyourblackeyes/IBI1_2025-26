@@ -24,8 +24,8 @@ for country, change in sorted_data:
 # find the countries that have the largest percentage change and the smallest percentage change
 largest_increase = sorted_data[0][0]
 largest_decrease = sorted_data[-1][0]
-print(f"\n: Countries with the largest population growth{largest_increase}")
-print(f": Countries with the largest population decline{largest_decrease}")
+print(f"\n: Countries with the largest population growth: {largest_increase}")
+print(f": Countries with the largest population decline: {largest_decrease}")
 
 # 4. create bar chart
 plt.figure(figsize=(8, 5))
