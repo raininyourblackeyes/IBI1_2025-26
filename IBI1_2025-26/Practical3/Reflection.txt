@@ -1,3 +1,0 @@
-In this pratical, I learned about the knowledges about Git and Github.
-I will study further in this semester.
-I have met some problems, such as troubles to push the change,but I finally made it.
